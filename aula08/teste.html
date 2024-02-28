@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <table border="1" width="200">
+        <thead>
+            <tr>
+                <th>
+                    <h2>Folha de ponto</h2>
+                </th>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Nome">Nome do funcionário</label>
+                    <input type="text" id="nome" name="nome">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="Nome">Função</label>
+                    <input type="text" id="funcao" name="funcao">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <label for="Nome">Horário</label>
+                    <input type="text" id="horario" name="horario">
+                </td>
+            </tr>
+        </thead>
+    </table>
+
+    <button id="botao">CadastrarPonto</button>
+
+    <script>
+
+        var nome = document.getElementById("nome");
+        var funcao = document.getElementById("funcao");
+        var horario = document.getElementById("horario");
+        var botao = document.getElementById("botao");
+
+        mostrarDados(nome, funcao, horario);
+        botao.addEventListener("click", function () {
+
+        })
+
+
+        nome.push(nome.value)
+        funcao.push(parseInt(funcao.value))
+        horario.push(parseInt(horario.value))
+        botao.push(parseInt(botao.value))
+
+
+    </script>
+
+
+</body>
+
+</html>
